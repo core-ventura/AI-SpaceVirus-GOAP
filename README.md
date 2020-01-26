@@ -4,7 +4,7 @@ Crea un proyecto GOAP en el que un conjunto de agentes lleven a cabo una serie d
 
 ![](Gif-SpaceVirus.gif)
 
-He optado por simular un asentamiento espacial tras un aterrizaje forzoso en un planeta desconocido. Nos encontraremos con agente como Tripulantes, Doctores, Soldados y finalmente los Aliens (Zombies). Además, he implementado acciones de interrupción, transformación de agentes y un control de costes dinámico.
+He optado por simular un asentamiento espacial tras un aterrizaje forzoso en un planeta desconocido. Nos encontraremos con agente como Tripulantes, Doctores, Soldados y finalmente los Aliens (Zombies). Además, he implementado **acciones de interrupción**, **transformación de agentes** y un **control de costes dinámico**.
 
 ![](Screenshot_1.PNG)
 
