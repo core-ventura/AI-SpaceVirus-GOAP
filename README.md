@@ -40,7 +40,7 @@ Tanto Pánico como Equipar equipo de soldado interrumpen el plan actual para pod
   
 **Doctor**: encargado de crear Medipacks (utilizando 1xPieza de nave espacial, 1xPlano y 1xInvestigación) con los recursos de la facilidad de almacenaje. A diferencia de los tripulantes, el doctor no recoge materiales de las diferentes zonas.
 1) Recoger recursos de la facilidad de almacenamiento. 
-2) Crear Medipack. (en la enfermería) 
+2) Crear Medipack. (En la enfermería) 
 3) Pánico. (Tras ser confrontado por un Alien, podrá entrar en pánico y correr a una ubicación aleatoria) 
   
 **Alien**: tras transformarse en un alien, el agente deambulará, yendo de zona a zona, en busca de comida. Tras detectar a un astronauta le perseguirá hasta convertirlo o hasta que un soldado le pare los pies.
