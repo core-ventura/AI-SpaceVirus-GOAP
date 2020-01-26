@@ -4,7 +4,7 @@ Crea un proyecto GOAP en el que un conjunto de agentes lleven a cabo una serie d
 
 ![](Gif-SpaceVirus.gif)
 
-He optado por simular un asentamiento espacial tras un aterrizaje forzoso en un planeta desconocido. Nos encontraremos con agente como Tripulantes, Doctores, Soldados y finalmente los Aliens (Zombies).
+He optado por simular un asentamiento espacial tras un aterrizaje forzoso en un planeta desconocido. Nos encontraremos con agente como Tripulantes, Doctores, Soldados y finalmente los Aliens (Zombies). Además, he implementado acciones de interrupción, transformación de agentes y un control de costes dinámico.
 
 ![](Screenshot_1.PNG)
 
@@ -28,27 +28,25 @@ Además, para la gestión de recursos, se priorizará la recolección de cierto 
 
 **Tripulante**: encargado de recuperar piezas de la nave espacial, planos y realizar investigaciones. Su objetivo es ir a las zonas designadas y llevar los recursos a la facilidad de almacenamiento. Posee una estado de alerta, pudiendo estar normal, en pánico o alentado) Sus acciones son:
 1) Recoger piezas de nave espacial del lugar del accidente.
-2) Llevar piezas de nave espacial a la facilidad de almacenamiento. <Meta>
+2) Llevar piezas de nave espacial a la facilidad de almacenamiento. <Objetivo>
 3) Recoger planos de la estación de comunicaciones.
-4) Llevar planos a la facilidad de almacenamiento. <Meta>
+4) Llevar planos a la facilidad de almacenamiento. <Objetivo>
 5) Realizar investigaciones en la zona de investigación. (Aquí puede ser infectado y convertirse en el agente Alien).
-6) Llevar la investigación a la facilidad de almacenamiento. <Meta> **<Interrupción>**
+6) Llevar la investigación a la facilidad de almacenamiento. <Objetivo> **<Interrupción>**
 7) Pánico. (Tras ser confrontado por un Alien, podrá entrar en pánico y correr a una ubicación aleatoria) <Meta>
-8) Equipar equipo de soldado. (Tras ser confrontado por un Alien, podrá sentirse alentado y correr a equiparse el equipo de soldado (siempre que haya armas), convirtiéndose en el agente Soldado). <Meta> **<Interrupción>**
+8) Equipar equipo de soldado. (Tras ser confrontado por un Alien, podrá sentirse alentado y correr a equiparse el equipo de soldado (siempre que haya armas), convirtiéndose en el agente Soldado). <Objetivo> **<Interrupción>**
   
 Tanto Pánico como Equipar equipo de soldado interrumpen el plan actual para poder actuar y responder ante la amenaza inmediata.
   
 **Doctor**: encargado de crear Medipacks (utilizando 1xPieza de nave espacial, 1xPlano y 1xInvestigación) con los recursos de la facilidad de almacenaje. A diferencia de los tripulantes, el doctor no recoge materiales de las diferentes zonas.
 1) Recoger recursos de la facilidad de almacenamiento. 
-2) Crear Medipack. (en la enfermería) <Meta>
-3) Pánico. (Tras ser confrontado por un Alien, podrá entrar en pánico y correr a una ubicación aleatoria) <Meta>  **<Interrupción>**
+2) Crear Medipack. (en la enfermería) <Objetivo>
+3) Pánico. (Tras ser confrontado por un Alien, podrá entrar en pánico y correr a una ubicación aleatoria) <Objetivo>  **<Interrupción>**
   
 **Alien**: tras transformarse en un alien, el agente deambulará, yendo de zona a zona, en busca de comida. Tras detectar a un astronauta le perseguirá hasta convertirlo o hasta que un soldado le pare los pies.
-1) Deambular. <Meta>
-
-
-  
-  
-
-
-  
+1) Deambular. <Objetivo>
+2) Perseguir. <Objetivo> **<Interrumpir>**
+ 
+**Soldado**: tiene un comportamiento análogo al alien con los astronautas, solo que esta vez, su objetivo son los zombies espaciales.
+1) Deambular. <Objetivo>
+2) Perseguir alien. <Objetivo> **<Interrumpir>**
