@@ -10,4 +10,15 @@ He optado por simular un asentamiento espacial tras un aterrizaje forzoso en un 
 
 ---
 
-**Los edificios y recursos**
+**Las zonas y sus recursos**
+
+Nos encontraremos con seis diferentes zonas:
+1) **Lugar del accidente:** donde se pueden recoger *piezas de la nave espacial*.
+2) **Estación de comunicaciones:** donde podremos obtener *planos*.
+3) **Zona de investigación**: donde se conseguiremos *investigaciones* y donde nuestros tripulantes pueden ser infectados por esporas alienígenas, convirtíendolos en zombies espaciales.
+4) **Facilidad de almacenamiento**: módulo donde guardaremos las piezas, planos e investigaciones.
+5) **Enfermería**: lugar donde se almacenan los *medipacks*. En principio esta zona se iba a utilizar como zona de recuperación de salud de los tripulantes y soldados, no obstante, dada la complejidad que se fue generando con el resto de agentes, decidí descartar la idea de puntos de salud y ceñirme a un comportamiento más instantáneo.
+6) **Armería**: donde se almacenan las armas y los tripulantes pueden armarse para convertirse en soldados.
+
+**Los agentes y sus acciones**
+
