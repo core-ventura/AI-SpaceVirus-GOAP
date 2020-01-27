@@ -42,7 +42,7 @@ public class Panic : GoapAction
         if (startTime == 0)
         {
             this.GetComponent<NavMeshAgent>().SetDestination(new Vector3(Random.Range(-10,10), 0, Random.Range(-10,10)));
-            this.GetComponent<NavMeshAgent>().speed = 1.5f;
+            this.GetComponent<NavMeshAgent>().speed = 2f;
             tears.SetActive(true);
             Debug.Log("Starting: " + name);
             startTime = Time.time;

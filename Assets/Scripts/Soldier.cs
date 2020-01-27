@@ -61,7 +61,7 @@ public class Soldier : MonoBehaviour, IGoap
          	agent.acceleration = turnAngle * agent.speed;
 		}
 
-		if(alertState == 1 && Vector3.Distance(this.transform.position, alienTarget.transform.position) < 0.35f)
+		if(alertState == 1 && Vector3.Distance(this.transform.position, alienTarget.transform.position) < 0.5f)
 		{
 			alertState = 0;
 			SpawnManager spawnManager = FindObjectOfType<SpawnManager>();
