@@ -53,9 +53,7 @@ public class EquipSoldierGear : GoapAction
 			SpawnManager spawnManager = FindObjectOfType<SpawnManager>();
 			GameObject newSoldier = Instantiate(spawnManager.soldier, this.transform.position, this.transform.rotation);
 			newSoldier.GetComponent<Wander>().target = spawnManager.alienWanderTargets[Random.Range(0, spawnManager.alienWanderTargets.Length)];
-            ParticleSystem bloodEffect = Instantiate(spawnManager.alienExplosionParticles, this.transform.position, this.transform.rotation);
-            bloodEffect.Play();
-			//Destroy(astronautTarget);
+			//Destroy(this.gameObject);
 			this.gameObject.SetActive(false);
             Debug.Log("Finished: " + name);
             completed = true;

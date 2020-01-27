@@ -64,7 +64,7 @@ public class Alien : MonoBehaviour, IGoap
          	agent.acceleration = turnAngle * agent.speed;
 		}
 
-		if(alertState == 1 && Vector3.Distance(this.transform.position, astronautTarget.transform.position) < 0.5f)
+		if(alertState == 1 && Vector3.Distance(this.transform.position, astronautTarget.transform.position) < 0.35f)
 		{
 			alertState = 0;
 			SpawnManager spawnManager = FindObjectOfType<SpawnManager>();
