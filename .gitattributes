@@ -26,7 +26,9 @@
 
 # Image formats
 *.psd filter=lfs diff=lfs merge=lfs -text
+*.ai filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
 *.bmp filter=lfs diff=lfs merge=lfs -text
@@ -58,6 +60,7 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 
 # 3D formats
+*.FBX filter=lfs diff=lfs merge=lfs -text
 *.fbx filter=lfs diff=lfs merge=lfs -text
 *.obj filter=lfs diff=lfs merge=lfs -text
 *.max filter=lfs diff=lfs merge=lfs -text
